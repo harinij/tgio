@@ -3,6 +3,6 @@ GIT Help
 Typical:
 Pull Changes: git pull
 Add all files: git add .
-New Commit of all changes: git commit -m "New Website"
+New Commit of all changes: git commit -am "New Website"
 Push Changes: git push
 See the status of connected: git remote -v
