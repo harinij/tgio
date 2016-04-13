@@ -22,26 +22,23 @@ $('a[href^="http://www.youtube.com"]').on('click', function(e){
 	if ( 'v' in queryVars )
 	{
         
-         if( navigator.userAgent.match(/Android/i)
-         || navigator.userAgent.match(/webOS/i)
-         || navigator.userAgent.match(/iPhone/i)
-         || navigator.userAgent.match(/iPad/i)
-         || navigator.userAgent.match(/iPod/i)
-         || navigator.userAgent.match(/BlackBerry/i)
-         || navigator.userAgent.match(/Windows Phone/i)
-         ){
-            // Prevent opening of external page
-            //e.preventDefault();
-        
-           
-            var iFrameSrc = 'http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&autoplay=1';
-
-
-           window.location = iFrameSrc;
-            
-          }
-         else {
-        
+//         if( navigator.userAgent.match(/Android/i)
+//         || navigator.userAgent.match(/webOS/i)
+//         || navigator.userAgent.match(/iPhone/i)
+//         || navigator.userAgent.match(/iPad/i)
+//         || navigator.userAgent.match(/iPod/i)
+//         || navigator.userAgent.match(/BlackBerry/i)
+//         || navigator.userAgent.match(/Windows Phone/i)
+//         ){
+//            // Prevent opening of external page
+//            //e.preventDefault();
+//        
+//           
+//           window.location.href = 'http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&autoplay=1';
+//            
+//          }
+//         else {
+//        
         
             // Prevent opening of external page
             e.preventDefault();
@@ -69,7 +66,7 @@ $('a[href^="http://www.youtube.com"]').on('click', function(e){
 
             // Open Modal
             $('#mediaModal').modal();
-	   }
+//	   }
     }
 });
  
