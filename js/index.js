@@ -118,17 +118,17 @@ autoPlayYouTubeModal();
   //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
   function autoPlayYouTubeModal() {
       
-       if( navigator.userAgent.match(/Android/i)
-         || navigator.userAgent.match(/webOS/i)
-         || navigator.userAgent.match(/iPhone/i)
-         || navigator.userAgent.match(/iPad/i)
-         || navigator.userAgent.match(/iPod/i)
-         || navigator.userAgent.match(/BlackBerry/i)
-         || navigator.userAgent.match(/Windows Phone/i)
-         ){
-           
-            
-       } else {
+//       if( navigator.userAgent.match(/Android/i)
+//         || navigator.userAgent.match(/webOS/i)
+//         || navigator.userAgent.match(/iPhone/i)
+//         || navigator.userAgent.match(/iPad/i)
+//         || navigator.userAgent.match(/iPod/i)
+//         || navigator.userAgent.match(/BlackBerry/i)
+//         || navigator.userAgent.match(/Windows Phone/i)
+//         ){
+//           
+//            
+//       } else {
       var trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function () {
           var theModal = $(this).data("target"),
@@ -142,7 +142,7 @@ autoPlayYouTubeModal();
               $(theModal + ' iframe').attr('src', videoSRC);
           });
       });
-  }
+//  }
   }
 
 function onChange(){

@@ -34,13 +34,10 @@ $('a[href^="http://www.youtube.com"]').on('click', function(e){
             //e.preventDefault();
         
            
-            var iFrameSrc = 'http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0&autoplay=1';
+            var iFrameSrc = 'http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&autoplay=1';
 
 
-            // Replace Modal HTML with iFrame Embed
-             document.getElementById("testing").src= iFrameSrc
-            //$('test-mobile').html(iFrameCode);
-            
+           window.location = iFrameSrc;
             
           }
          else {
