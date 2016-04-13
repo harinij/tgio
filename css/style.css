@@ -8438,11 +8438,7 @@ a{text-decoration:none; color:black;}
     display:block;
     width:100%;
     margin: 0 0 24px 0;
-  
-  
-    margin: 0 0 24px 0;
   }
-   
   iframe{
     display:block;
     width:100%;
@@ -8489,15 +8485,6 @@ a{text-decoration:none; color:black;}
     }
     
   }
-}
-
-/***** MODAL PROPERTIES *****/
-.bs-example{
-    margin: 20px;
-}
-.modal-content iframe{
-    margin: 0 auto;
-    display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
