@@ -31,12 +31,15 @@ $('a[href^="http://www.youtube.com"]').on('click', function(e){
          || navigator.userAgent.match(/Windows Phone/i)
          ){
             // Prevent opening of external page
-            e.preventDefault();
+            //e.preventDefault();
+        
            
-            var iFrameCode = '<iframe scrolling="no" allowtransparency="true" allowfullscreen="true" src="http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+            var iFrameSrc = 'http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0&autoplay=1';
+
 
             // Replace Modal HTML with iFrame Embed
-            $('.test-mobile').html(iFrameCode);
+             document.getElementById("testing").src= iFrameSrc
+            //$('test-mobile').html(iFrameCode);
             
             
           }
