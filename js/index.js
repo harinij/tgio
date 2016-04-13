@@ -126,6 +126,8 @@ autoPlayYouTubeModal();
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)
          ){
+           
+            
        } else {
       var trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function () {

@@ -36,10 +36,9 @@ $('a[href^="http://www.youtube.com"]').on('click', function(e){
             var iFrameCode = '<iframe scrolling="no" allowtransparency="true" allowfullscreen="true" src="http://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>';
 
             // Replace Modal HTML with iFrame Embed
-            $('#mediaModal .test-mobile').html(iFrameCode);
+            $('.test-mobile').html(iFrameCode);
             
-            // Open Modal
-            $('#mediaModal').modal();
+            
           }
          else {
         
